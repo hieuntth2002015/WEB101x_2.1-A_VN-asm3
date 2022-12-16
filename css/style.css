@@ -1,0 +1,429 @@
+* {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*nav-bar */
+#nav-bar .container #navmenu ul li {
+    border-right: 1px solid rgb(200, 200, 200);
+}
+
+#nav-bar ul li .profile-img {
+    width: 12rem;
+    height: 12rem;
+    margin-top: -6rem;
+    margin-left: 6rem;
+    z-index: 999;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ebeef8;
+    box-shadow: 0 2px 10px -2px #199cdb;
+    position: absolute;
+}
+
+#banner .container .banner1 {
+    padding-top: 200px;
+    padding-left: 20px;
+}
+
+/* Job-info */
+
+#job-info .container>div .left>div {
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+#job-info .container>div .right>div {
+    margin-bottom: 60px;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+#job-info .container .row .left .card ul li h3:before {
+    content: "\2022";
+    color: #199cdb;
+    font-weight: bold;
+    font-size: 30px;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+#job-info .container .row .right .card ul li h3:before {
+    content: "\2022";
+    color: #199cdb;
+    font-weight: bold;
+    font-size: 30px;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+#certificate .container .certificate-form .row .certificate-content p,
+#certificate .container .certificate-form>div .certificate-content p {
+    margin: 0 auto;
+}
+
+
+
+#project .container .row>div #describe .project-detail .detail form button {
+    border: none !important;
+}
+
+@media (max-width: 768px) {
+    #banner .container .banner1 {
+        padding-top: 100px;
+        padding-left: 20px;
+    }
+
+    #nav-bar .container #navmenu ul {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    #nav-bar .container #navmenu ul li {
+        border: none;
+        width: 100%;
+        justify-content: start !important;
+    }
+}
+
+@media (max-width: 992px) {
+    #nav-bar .container #navmenu ul li {
+        border: none;
+        width: 100%;
+        justify-content: start !important;
+    }
+
+    #job-info .container>div .left>div {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    #job-info .container>div .right>div {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    #certificate .container .certificate-form>div {}
+
+    #certificate .container .certificate-form>div .form1 {
+        padding-bottom: 40px;
+        border-right: none !important;
+    }
+
+    #certificate .container .certificate-form>div .form2 {
+        border-right: none !important;
+        border-top: 2px solid rgb(255, 140, 0);
+        padding-top: 40px;
+    }
+
+    #certificate .container .certificate-form .certificate-content img {
+        width: 100% !important;
+    }
+}
+
+/* Project charter */
+#charter .grid {
+    display: grid;
+    grid-template-areas:
+        "goals goals goals teams teams timeline"
+        "scopes scopes scopes primarys primarys timeline";
+    gap: 20px;
+    background-color: #2196f3;
+    padding: 10px;
+}
+
+#charter .grid-item {
+    text-align: center;
+}
+
+.grid-item1 {
+    grid-area: goals;
+    width: 550px;
+}
+
+.grid-item2 {
+    grid-area: teams;
+    width: 300px;
+}
+
+.grid-item3 {
+    grid-area: scopes;
+    width: 550px;
+}
+
+.grid-item4 {
+    grid-area: primarys;
+    width: 300px;
+}
+
+.grid-item5 {
+    grid-area: timeline;
+    width: 350px;
+}
+@media (max-width: 767px) {
+    #charter .grid {
+       width: 100%;
+       display: inline-table;
+    }
+    .grid-item1 {
+        grid-area: goals;
+        width: 100%;
+
+    }
+    
+    .grid-item2 {
+        grid-area: teams;
+        width: 100%;
+    }
+    
+    .grid-item3 {
+        grid-area: scopes;
+        width: 100%;
+    }
+    
+    .grid-item4 {
+        grid-area: primarys;
+        width: 100%;
+    }
+    
+    .grid-item5 {
+        grid-area: timeline;
+        width: 100%;
+    }
+}
+
+    
+
+
+/* timeline */
+#charter .container .grid .timeline .timeline-item a {
+    text-decoration: none;
+}
+
+/* footer */
+.site-footer {
+    background-color: #26272b;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.social-icons li {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.social-icons a {
+    background-color: #f9f9f9;
+    color: #29aafe;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe;
+}
+
+.social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px;
+}
+
+.social-icons a.facebook:hover {
+    background-color: #2196f3;
+}
+
+.social-icons a.linkedin:hover {
+    background-color: #2196f3;
+}
+
+.social-icons a.github:hover {
+    background-color: #2196f3;
+}
+
+@media (max-width: 767px) {
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600;
+    }
+}
+
+/* Image Hover */
+
+
+.hover-2 a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.hover-2 a:before {
+    border-color: #000 transparent transparent;
+    border-style: solid;
+    border-width: 0;
+    content: "";
+
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    width: 0;
+}
+
+.hover-2 a:after {
+    border-color: transparent transparent #000;
+    border-style: solid;
+    border-width: 0;
+    bottom: 0;
+    content: "";
+    height: 0;
+    opacity: 0.2;
+    position: absolute;
+    right: 0;
+    transition: all 0.5s ease-in-out;
+    width: 0;
+}
+
+.hover-2 a:hover:before {
+    border-width: 280px 250px 0 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.hover-2 a:hover:after {
+    border-width: 0 0 280px 250px;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+
+/* banner hover */
+.banner-effect {
+    background-color: #ddd;
+    padding: 10px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.banner-effect::after {
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%) repeat scroll 0 0;
+    content: "";
+    display: block;
+    position: absolute;
+    right: -75%;
+    top: 0;
+    transform: skewX(-25deg);
+    width: 50%;
+    z-index: 2;
+    
+}
+
+.banner-effect:hover::after {
+    animation: 1s ease 0s normal none 1 running fixedAnim;
+    animation: 1s ease 0s normal none 1 running fixedAnim;
+    -webkit-animation: 1s ease 0s normal none 1 running fixedAnim;
+    -moz-animation: 1s ease 0s normal none 1 running fixedAnim;
+}
+
+@-webkit-keyframes fixedAnim {
+    0% {
+        right: 125%;
+    }
+
+    125% {
+        right: 0;
+    }
+}
+
+@-moz-keyframes fixedAnim {
+    0% {
+        right: 125%;
+    }
+
+    125% {
+        right: 0;
+    }
+}
+
+@keyframes fixedAnim {
+    0% {
+        right: 125%
+    }
+
+    125% {
+        right: 0;
+    }
+}
+
+/* chứng chỉ và giải thưởng */
+
+.certificate-form .form3 {
+    display: flex !important;
+}
+.certificate-form .form3 img {
+  width: 600px;
+  padding-left: 40px;
+}
+.certificate-form .form3 .certificate-content {
+    padding-left: 40px;
+}
+
+
+/* Project detail */
+.project-detail {
+    background-color: #199cdb;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+  .project-detail a {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .project-detail a:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .project-detail:hover a {
+    padding-right: 25px;
+  }
+  
+  .project-detail:hover a:after {
+    opacity: 1;
+    right: 0;
+  }
